@@ -1,6 +1,6 @@
 import 'package:floor/floor.dart';
 
-import 'Couches.dart';
+import 'couches.dart';
 
 @Entity(
   tableName: 'Courses',
@@ -16,8 +16,6 @@ class Course {
   /// we put here both the date and time
   late String startDateTime;
   late String endDateTime;
-// late String startHour;
-// late String endHour;
   late int couchId;
 
   Course(this.name, this.startDateTime, this.endDateTime, this.couchId);

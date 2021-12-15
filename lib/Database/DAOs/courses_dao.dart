@@ -1,14 +1,13 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/Couches.dart';
-import 'package:project_raphael/Database/Tables/Courses.dart';
+import 'package:project_raphael/Database/Tables/courses.dart';
 
 @dao
 abstract class CourseDao {
   @Query('SELECT * FROM Courses')
-  Future<List<Couch>> findAllCourses();
+  Future<List<Course>> findAllCourses();
 
   @Query('SELECT * FROM Courses')
-  Stream<List<Couch>> findAllCoursesAsStream();
+  Stream<List<Course>> findAllCoursesAsStream();
 
   @insert
   Future<void> insertCourse(Course course);
