@@ -1,6 +1,6 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/courses.dart';
-import 'package:project_raphael/Database/Tables/devices.dart';
+import 'package:project_raphael/Database/entities/courses.dart';
+import 'package:project_raphael/Database/entities/devices.dart';
 
 @Entity(
   tableName: 'Students',

@@ -2,28 +2,30 @@
 
 // required package imports
 
+import 'dart:async';
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/Answers.dart';
-import 'package:project_raphael/Database/Tables/Couches.dart';
-import 'package:project_raphael/Database/Tables/Courses.dart';
-import 'package:project_raphael/Database/Tables/Devices.dart';
-import 'package:project_raphael/Database/Tables/Questions.dart';
-import 'package:project_raphael/Database/Tables/Sessions.dart';
-import 'package:project_raphael/Database/Tables/Students.dart';
-import 'package:project_raphael/Database/Tables/students_answers.dart';
+import 'package:project_raphael/Database/DAOs/answers_dao.dart';
+import 'package:project_raphael/Database/DAOs/couches_dao.dart';
+import 'package:project_raphael/Database/DAOs/courses_dao.dart';
+import 'package:project_raphael/Database/DAOs/devices_dao.dart';
+import 'package:project_raphael/Database/DAOs/questions_dao.dart';
+import 'package:project_raphael/Database/DAOs/sessions_dao.dart';
+import 'package:project_raphael/Database/DAOs/students_answers_dao.dart';
+import 'package:project_raphael/Database/DAOs/students_dao.dart';
+import 'package:project_raphael/Database/entities/answers.dart';
+import 'package:project_raphael/Database/entities/couches.dart';
+import 'package:project_raphael/Database/entities/courses.dart';
+import 'package:project_raphael/Database/entities/devices.dart';
+import 'package:project_raphael/Database/entities/questions.dart';
+import 'package:project_raphael/Database/entities/sessions.dart';
+import 'package:project_raphael/Database/entities/students.dart';
+import 'package:project_raphael/Database/entities/students_answers.dart';
+import 'package:sqflite/sqflite.dart' as sqflite;
 
-import 'DAOs/answers_dao.dart';
-import 'DAOs/couches_dao.dart';
-import 'DAOs/courses_dao.dart';
-import 'DAOs/devices_dao.dart';
-import 'DAOs/questions_dao.dart';
-import 'DAOs/sessions_dao.dart';
-import 'DAOs/students_answers_dao.dart';
-import 'DAOs/students_dao.dart';
 
-// part 'database.g.dart'; // the generated code will be there
+part 'database.g.dart'; // the generated code will be there
 
-@Database(version: 1, entities: [
+@Database(version: 2, entities: [
   Answer,
   Couch,
   Course,
@@ -31,7 +33,7 @@ import 'DAOs/students_dao.dart';
   Question,
   Session,
   Student,
-  StudentsAnswer,
+  StudentsAnswer
 ])
 abstract class AppDatabase extends FloorDatabase {
   AnswerDao get answerDao;

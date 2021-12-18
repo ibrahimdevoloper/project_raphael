@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/courses.dart';
+import 'package:project_raphael/Database/entities/courses.dart';
 
 @Entity(
   tableName: 'Sessions',

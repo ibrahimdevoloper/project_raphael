@@ -1,14 +1,13 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/sessions.dart';
-import 'package:project_raphael/Database/Tables/students_answers.dart';
+import 'package:project_raphael/Database/entities/students_answers.dart';
 
 @dao
 abstract class StudentsAnswerDao {
   @Query('SELECT * FROM Students_Answers')
-  Future<List<Session>> findAllStudentsAnswer();
+  Future<List<StudentsAnswer>> findAllStudentsAnswer();
 
   @Query('SELECT * FROM Students_Answers')
-  Stream<List<Session>> findAllStudentsAnswerAsStream();
+  Stream<List<StudentsAnswer>> findAllStudentsAnswerAsStream();
 
   @insert
   Future<void> insertStudentsAnswer(StudentsAnswer studentsAnswer);

@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/couches.dart';
+import 'package:project_raphael/Database/entities/couches.dart';
 
 @dao
 abstract class CouchDao {

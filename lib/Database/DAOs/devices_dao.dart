@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/devices.dart';
+import 'package:project_raphael/Database/entities/devices.dart';
 
 @dao
 abstract class DeviceDao {

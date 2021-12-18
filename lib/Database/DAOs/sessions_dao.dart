@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/sessions.dart';
+import 'package:project_raphael/Database/entities/sessions.dart';
 
 @dao
 abstract class SessionDao {

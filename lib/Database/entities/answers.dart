@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/questions.dart';
+import 'package:project_raphael/Database/entities/questions.dart';
 
 @Entity(
   tableName: 'Answers',

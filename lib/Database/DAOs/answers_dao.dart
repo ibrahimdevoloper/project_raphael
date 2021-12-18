@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:project_raphael/Database/Tables/answers.dart';
+import 'package:project_raphael/Database/entities/answers.dart';
 
 @dao
 abstract class AnswerDao {
